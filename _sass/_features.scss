@@ -1,13 +1,25 @@
-.features {
-  padding: 4rem 0;
-  background-color: #eef2ff;
-}
-
-
 .features__grid {
   display: grid;
   gap: 2rem;
 }
+
+
+
+.features {
+  background-color: $bg-dark-soft;
+  color: $text-light;
+  padding: 5rem 0;
+}
+
+.features .feature {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .feature {
   text-align: center;

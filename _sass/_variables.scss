@@ -1,9 +1,18 @@
-$primary-color: #2563eb;
+// Base / identidad
+$primary-color: #6366f1;
+$header-bg: #0f172a;
 
-/* NEW */
-$bg-light: #f8fafc;
-$bg-soft: #eef2ff;   // subtle blue tint
-$bg-dark: #1e293b;
+// Backgrounds (mejorados)
+$bg-dark: $header-bg;
+$bg-dark-soft: #1e293b;   // más contraste que antes
+$bg-mid: #334155;         // nuevo nivel intermedio
+$bg-light: #f1f5f9;
+$bg-light-alt: #e2e8f0;
 
-$text-dark: #0f172a;
-$text-light: #64748b;
+// Texto
+$text-light: #e2e8f0;
+$text-dark: $header-bg;
+
+// Acentos
+$accent: $primary-color;
+$accent-hover: #818cf8;

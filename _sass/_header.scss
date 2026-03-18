@@ -1,48 +1,62 @@
 .header {
-  background-color: #4f46e5; // nice strong indigo
-  border-bottom: 1px solid #e5e7eb; // subtle separator
+  background-color: $header-bg;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(8px);
+
 }
 
-.header .container {
+.header .container  {
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   padding: 1rem; }
+
+
+   .header__menu {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  gap: 1.5rem;
 }
 
-.logo {
+
+/* LOGO */
+.header__logo a {
   font-weight: bold;
   font-size: 1.25rem;
   color: #ffffff;
 }
 
-.nav a {
+/* LINKS */
+.header__menu a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #e0e7ff;
+  color: $text-light;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: #7346e5;
+/* HOVER */
+.header__menu a:hover {
+  color: $accent;
 }
 
-.header__menu {
-  list-style: none;
-  display: none;
+.btn--primary {
+  background-color: $accent;
+  color: #fff;
+  transition: background 0.3s ease;
 }
 
-.header__menu li {
-  display: inline-block;
-  margin-left: 1.5rem;
+.btn--primary:hover {
+  background-color: $accent-hover;
 }
 
-/* DESKTOP */
-@media (min-width: 768px) {
+
+/* MOBILE (opcional ocultar) */
+@media (max-width: 768px) {
   .header__menu {
-    display: block;
+    display: none;
   }
 }

@@ -1,0 +1,56 @@
+.feature,
+.service {
+  position: relative;
+  border-radius: 16px;
+  padding: 2rem;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+
+.feature:hover,
+.service:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.features .feature:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2);
+}
+
+.services .service:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.feature:hover,
+.service:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.features .feature:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2);
+}
+
+.services .service:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.feature h3,
+.service h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.feature p,
+.service p {
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.feature__icon,
+.service__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6366f1;
+}

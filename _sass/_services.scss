@@ -1,12 +1,12 @@
 .services {
-  padding: 4rem 0;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #87a8ca, #e2e8f0);
 }
 
-.service {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 8px;
+.services .service {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
 }
 
 .services__grid {
