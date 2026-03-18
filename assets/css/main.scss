@@ -1,0 +1,68 @@
+---
+---
+
+@import "variables";
+@import "header";
+@import "hero";
+@import "features";
+@import "services";
+@import "footer";
+
+/* GLOBAL STYLES */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: $text-dark;
+  background-color: #fff;
+}
+
+.section-header p {
+  color: $text-light;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn--primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}

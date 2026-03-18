@@ -1,0 +1,48 @@
+.header {
+  background-color: #4f46e5; // nice strong indigo
+  border-bottom: 1px solid #e5e7eb; // subtle separator
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #e0e7ff;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #7346e5;
+}
+
+.header__menu {
+  list-style: none;
+  display: none;
+}
+
+.header__menu li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .header__menu {
+    display: block;
+  }
+}

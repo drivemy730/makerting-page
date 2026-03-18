@@ -1,0 +1,27 @@
+.services {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.service {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.services__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.service img {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

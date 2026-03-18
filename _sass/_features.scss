@@ -1,0 +1,26 @@
+.features {
+  padding: 4rem 0;
+  background-color: #eef2ff;
+}
+
+
+.features__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

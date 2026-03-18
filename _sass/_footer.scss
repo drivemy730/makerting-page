@@ -1,0 +1,33 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__links ul {
+  list-style: none;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

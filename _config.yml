@@ -1,0 +1,15 @@
+# Site settings
+title: DevMark Agency
+email: hello@devmark.com
+description: >-
+  We build high-converting landing pages that generate leads and grow your business.
+baseurl: ""
+url: ""
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+  
+# Build settings
+permalink: pretty
