@@ -1,14 +1,14 @@
 # Site settings
 title: DevMark Agency
-email: hello@devmark.com
-description: >-
-  We build high-converting landing pages that generate leads and grow your business.
-baseurl: ""
-url: ""
+description: Modern digital solutions for growing brands.
+url: "https://marketing-page.vercel.app" # Fix the typo here!
+author: David Velez
 
+# This tells Jekyll where to look for your Sass
 sass:
   sass_dir: _sass
   style: compressed
+
 
   
 # Build settings
