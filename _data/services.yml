@@ -1,0 +1,14 @@
+- title: "SEO Optimization"
+  description: "Boost your visibility and rank higher on search engines."
+  icon: "fa-search"
+  image: "service1.jpg"
+
+- title: "Web Development"
+  description: "High-performance websites built with Jekyll and modern tech."
+  icon: "fa-code"
+  image: "service2.jpg"
+
+- title: "Digital Strategy"
+  description: "Data-driven plans to scale your business effectively."
+  icon: "fa-chart-line"
+  image: "service3.jpg"
