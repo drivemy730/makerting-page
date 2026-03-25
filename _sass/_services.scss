@@ -20,6 +20,5 @@
 }
 
 .services__grid {
-  @include responsive-grid(1, 1, 3); 
+  @include responsive-grid(1, 2, 3);
 }
-

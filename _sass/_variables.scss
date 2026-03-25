@@ -6,16 +6,18 @@ $white: #ffffff;
 $glass-bg: rgba(255, 255, 255, 0.03);
 $transition: all 0.35s ease;
 
-@mixin responsive-grid($cols: 1, $tablet-cols: 2, $desktop-cols: 3, $gap: 2rem) {
+@mixin responsive-grid($mobile-cols: 1, $tablet-cols: 2, $desktop-cols: 3, $gap: 2rem) {
   display: grid;
   gap: $gap;
-  grid-template-columns: repeat($cols, 1fr);
+  grid-template-columns: repeat($mobile-cols, 1fr);
 
-  @media (min-width: 768px) {
+  // Trigger 2 columns for smaller tablets/large phones
+  @media (min-width: 600px) {
     grid-template-columns: repeat($tablet-cols, 1fr);
   }
 
-  @media (min-width: 1024px) {
+  // Trigger 3 columns for iPads and Laptops
+  @media (min-width: 900px) { 
     grid-template-columns: repeat($desktop-cols, 1fr);
   }
 }
