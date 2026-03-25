@@ -1,22 +1,27 @@
 .services {
-  background: linear-gradient(to bottom, #87a8ca, #e2e8f0);
-}
+  background: linear-gradient(to bottom, $gray-light, $white);
+  padding: $section-padding;
 
-.services .service {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  margin-bottom: 3rem;
-}
+  &__grid {
+    @include responsive-grid(1, 2, 3);
+  }
 
-.services__grid {
-  display: grid;
-  gap: 2rem;
-}
+  .service {
+    background: $white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
 
-.service img {
-  margin-bottom: 1rem;
-  border-radius: 6px;
+    &:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+  }
 }
 
 .services__grid {

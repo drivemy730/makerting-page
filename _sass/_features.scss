@@ -1,32 +1,30 @@
-.features__grid {
-  display: grid;
-  gap: 2rem;
-}
-
-
 .features {
-  background-color: $bg-dark-soft;
+  background-color: $dark-soft; // Provides better contrast for glass cards
   color: $text-light;
-  padding: 5rem 0;
-}
+  padding: $section-padding;
 
-.features .feature {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  &__grid {
+    @include responsive-grid(1, 2, 3); 
+  }
 
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}
+  .feature {
+    background: $glass-bg;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($white, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
 
-
-
-.feature {
-  text-align: center;
+    &:hover {
+      border-color: rgba($primary, 0.5);
+      box-shadow: 0 15px 40px rgba($primary, 0.2);
+    }
+  }
 }
 
 .feature__icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: $primary;
 }
 
 .features__grid {

@@ -1,62 +1,60 @@
 .header {
-  background-color: $header-bg;
+  background-color: $dark;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(8px);
 
+  .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+  }
 }
 
-.header .container  {
-   display: flex; 
-   justify-content: space-between; 
-   align-items: center; 
-   padding: 1rem; }
-
-
-   .header__menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-
-/* LOGO */
 .header__logo a {
   font-weight: bold;
   font-size: 1.25rem;
-  color: #ffffff;
-}
-
-/* LINKS */
-.header__menu a {
-  margin-left: 1.5rem;
+  color: $white;
   text-decoration: none;
-  color: $text-light;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
-/* HOVER */
-.header__menu a:hover {
-  color: $accent;
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: $text-light;
+    font-weight: 500;
+    transition: $transition;
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 .btn--primary {
-  background-color: $accent;
-  color: #fff;
-  transition: background 0.3s ease;
+  background-color: $primary;
+  color: $white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
 }
 
-.btn--primary:hover {
-  background-color: $accent-hover;
-}
-
-
-/* MOBILE (opcional ocultar) */
 @media (max-width: 768px) {
   .header__menu {
-    display: none;
+    display: none; // Classic mobile approach
   }
 }

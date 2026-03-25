@@ -1,10 +1,18 @@
 // _sass/_variables.scss
+// _sass/_variables.scss
 $primary: #6366f1;
+$primary-hover: #818cf8;
 $dark: #0f172a;
+$dark-soft: #1e293b;
 $gray-light: #f1f5f9;
 $white: #ffffff;
 $glass-bg: rgba(255, 255, 255, 0.03);
 $transition: all 0.35s ease;
+
+// Added for the refactor below
+$text-light: #e2e8f0;
+$text-muted: rgba(226, 232, 240, 0.6);
+$section-padding: 6rem 0;
 
 @mixin responsive-grid($mobile-cols: 1, $tablet-cols: 2, $desktop-cols: 3, $gap: 2rem) {
   display: grid;

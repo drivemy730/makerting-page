@@ -1,26 +1,27 @@
 .hero {
-  background: linear-gradient(135deg, $dark-bg, $dark-soft);
+  background: linear-gradient(135deg, $dark, $dark-soft);
   color: $text-light;
   padding: $section-padding;
   text-align: center;
-}
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-.hero__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
+  &__title {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: $white;
+  }
 
-.hero__subtitle {
-  margin-bottom: 1.5rem;
-  color: $text-muted; // Improved visibility on dark background
-  font-size: 1.1rem;
+  &__subtitle {
+    margin-bottom: 1.5rem;
+    color: $text-muted;
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 768px) {
