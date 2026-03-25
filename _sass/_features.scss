@@ -29,9 +29,7 @@
   margin-bottom: 1rem;
 }
 
-/* DESKTOP */
-@media (min-width: 768px) {
-  .features__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.features__grid {
+  @include responsive-grid(1, 2, 3); // 1 col mobile, 2 tablet, 3 desktop
 }
+

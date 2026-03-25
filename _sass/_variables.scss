@@ -6,16 +6,16 @@ $white: #ffffff;
 $glass-bg: rgba(255, 255, 255, 0.03);
 $transition: all 0.35s ease;
 
-// _sass/_mixins.scss (Create this or put in main.scss)
-@mixin responsive-grid($cols: 3, $gap: 2rem) {
+@mixin responsive-grid($cols: 1, $tablet-cols: 2, $desktop-cols: 3, $gap: 2rem) {
   display: grid;
   gap: $gap;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat($cols, 1fr);
-  }
-}
+  grid-template-columns: repeat($cols, 1fr);
 
-// Then in your component files:
-.grid-layout {
-  @include responsive-grid(3);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat($tablet-cols, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat($desktop-cols, 1fr);
+  }
 }

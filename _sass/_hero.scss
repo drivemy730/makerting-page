@@ -1,7 +1,7 @@
 .hero {
- background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, $dark-bg, $dark-soft);
   color: $text-light;
-  padding: 6rem 0;
+  padding: $section-padding;
   text-align: center;
 }
 
@@ -14,29 +14,30 @@
 .hero__title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero__subtitle {
   margin-bottom: 1.5rem;
-  color: #555;
+  color: $text-muted; // Improved visibility on dark background
+  font-size: 1.1rem;
 }
 
-/* DESKTOP */
 @media (min-width: 768px) {
+  .hero {
+    text-align: left; // Standard agency "Split" look
+  }
+  
   .hero__container {
     flex-direction: row;
     align-items: center;
   }
 
-  .hero__content {
-    flex: 1;
-  }
-
-  .hero__image {
+  .hero__content, .hero__image {
     flex: 1;
   }
 
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 3rem; 
   }
 }

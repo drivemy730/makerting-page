@@ -1,7 +1,8 @@
 .footer {
-  background-color: #111;
-  color: #fff;
-  padding: 2rem 0;
+  background-color: $footer-bg;
+  color: $text-light;
+  padding: 3rem 0; 
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer__container {
@@ -11,14 +12,20 @@
 }
 
 .footer a {
-  color: #fff;
+  color: $text-light;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $primary;
+  }
 }
 
 .footer__links ul {
   list-style: none;
+  padding: 0;
 }
 
-/* DESKTOP */
 @media (min-width: 768px) {
   .footer__container {
     flex-direction: row;
@@ -28,6 +35,9 @@
 
 .footer__bottom {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  color: $text-muted;
 }
