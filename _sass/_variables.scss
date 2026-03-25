@@ -1,18 +1,21 @@
-// Base / identidad
-$primary-color: #6366f1;
-$header-bg: #0f172a;
+// _sass/_variables.scss
+$primary: #6366f1;
+$dark: #0f172a;
+$gray-light: #f1f5f9;
+$white: #ffffff;
+$glass-bg: rgba(255, 255, 255, 0.03);
+$transition: all 0.35s ease;
 
-// Backgrounds (mejorados)
-$bg-dark: $header-bg;
-$bg-dark-soft: #1e293b;   // más contraste que antes
-$bg-mid: #334155;         // nuevo nivel intermedio
-$bg-light: #f1f5f9;
-$bg-light-alt: #e2e8f0;
+// _sass/_mixins.scss (Create this or put in main.scss)
+@mixin responsive-grid($cols: 3, $gap: 2rem) {
+  display: grid;
+  gap: $gap;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat($cols, 1fr);
+  }
+}
 
-// Texto
-$text-light: #e2e8f0;
-$text-dark: $header-bg;
-
-// Acentos
-$accent: $primary-color;
-$accent-hover: #818cf8;
+// Then in your component files:
+.grid-layout {
+  @include responsive-grid(3);
+}
