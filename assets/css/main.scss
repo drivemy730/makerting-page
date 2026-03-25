@@ -22,7 +22,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: $text-dark;
+  color: $dark;
   background-color: #fff;
 }
 
@@ -57,9 +57,9 @@ a {
 
 /* PRIMARY BUTTON */
 .btn--primary {
-  background: linear-gradient(135deg, $accent, $accent-hover);
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+background: linear-gradient(135deg, $primary, $primary-hover);  
+color: #fff;
+box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
 }
 
 /* HOVER */

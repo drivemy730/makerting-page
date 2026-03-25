@@ -1,31 +1,32 @@
 // _sass/_variables.scss
-// _sass/_variables.scss
-$primary: #6366f1;
+
+// Brand Colors
+$primary:       #6366f1;
 $primary-hover: #818cf8;
-$dark: #0f172a;
-$dark-soft: #1e293b;
-$gray-light: #f1f5f9;
-$white: #ffffff;
-$glass-bg: rgba(255, 255, 255, 0.03);
-$transition: all 0.35s ease;
+$dark:          #0f172a;
+$dark-soft:     #1e293b;
+$gray-light:    #f1f5f9;
+$white:         #ffffff;
 
-// Added for the refactor below
-$text-light: #e2e8f0;
-$text-muted: rgba(226, 232, 240, 0.6);
+// UI Elements
+$text-light:      #e2e8f0;
+$text-muted:      rgba(226, 232, 240, 0.6);
+$glass-bg:        rgba(255, 255, 255, 0.03);
 $section-padding: 6rem 0;
+$transition:      all 0.35s ease;
+$glass-bg: rgba(255, 255, 255, 0.03); // Very subtle white transparency
 
-@mixin responsive-grid($mobile-cols: 1, $tablet-cols: 2, $desktop-cols: 3, $gap: 2rem) {
+// The Mixin
+@mixin responsive-grid($mobile: 1, $tablet: 2, $desktop: 3, $gap: 2rem) {
   display: grid;
   gap: $gap;
-  grid-template-columns: repeat($mobile-cols, 1fr);
+  grid-template-columns: repeat($mobile, 1fr);
 
-  // Trigger 2 columns for smaller tablets/large phones
   @media (min-width: 600px) {
-    grid-template-columns: repeat($tablet-cols, 1fr);
+    grid-template-columns: repeat($tablet, 1fr);
   }
 
-  // Trigger 3 columns for iPads and Laptops
-  @media (min-width: 900px) { 
-    grid-template-columns: repeat($desktop-cols, 1fr);
+  @media (min-width: 992px) { // Standard iPad Pro / Desktop breakpoint
+    grid-template-columns: repeat($desktop, 1fr);
   }
 }

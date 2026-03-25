@@ -1,10 +1,11 @@
 .features {
-  background-color: $dark-soft; // Provides better contrast for glass cards
+  background-color: $dark-soft; 
   color: $text-light;
   padding: $section-padding;
 
   &__grid {
     @include responsive-grid(1, 2, 3); 
+    // This handles the iPad layout (1 col mobile, 2 tablet, 3 desktop)
   }
 
   .feature {
@@ -13,20 +14,20 @@
     border: 1px solid rgba($white, 0.08);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     text-align: center;
+    border-radius: 16px; // Added to match your previous design
+    padding: 2rem;
+    transition: $transition;
 
     &:hover {
+      transform: translateY(-8px);
       border-color: rgba($primary, 0.5);
       box-shadow: 0 15px 40px rgba($primary, 0.2);
     }
+
+    &__icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $primary;
+    }
   }
-}
-
-.feature__icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: $primary;
-}
-
-.features__grid {
-  @include responsive-grid(1, 2, 3); 
 }

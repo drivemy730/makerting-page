@@ -22,23 +22,22 @@
     color: $text-muted;
     font-size: 1.1rem;
   }
-}
 
-@media (min-width: 768px) {
-  .hero {
-    text-align: left; // Standard agency "Split" look
-  }
-  
-  .hero__container {
-    flex-direction: row;
-    align-items: center;
-  }
+  // Use 992px for better tablet/iPad Pro support
+  @media (min-width: 992px) {
+    text-align: left;
 
-  .hero__content, .hero__image {
-    flex: 1;
-  }
+    &__container {
+      flex-direction: row;
+      align-items: center;
+    }
 
-  .hero__title {
-    font-size: 3rem; 
+    &__content, &__image {
+      flex: 1;
+    }
+
+    &__title {
+      font-size: 3.5rem; // Slightly larger for desktop impact
+    }
   }
 }
