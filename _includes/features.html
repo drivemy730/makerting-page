@@ -1,21 +1,15 @@
-<section id="features" class="features">
-  <div class="container">
-    <div class="section-header">
-      <h2>Why Choose Us</h2>
-      <p>We deliver measurable results through proven strategies.</p>
-    </div>
-
-    <div class="features__grid "> 
-      
-      {% for feature in site.data.features %}
-
-          <div class="feature">
-            <div class="feature__icon">{{ feature.icon }}</div>
+  <section id="features" class="features">
+    <div class="container">
+      <header class="section-header"> <h2>Why Choose Us</h2>
+        <p>We deliver measurable results through proven strategies.</p>
+      </header>
+      <div class="features__grid"> 
+        {% for feature in site.data.features %}
+          <article class="feature"> <div class="feature__icon" aria-hidden="true">{{ feature.icon }}</div>
             <h3>{{ feature.title }}</h3>
             <p>{{ feature.description }}</p>
-          </div>
-
-      {% endfor %}
+          </article>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
+  </section>

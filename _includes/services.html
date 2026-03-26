@@ -1,18 +1,17 @@
 <section id="services" class="services">
-  <div class="container">
-    <div class="section-header">
-      <h2>Our Services</h2>
-      <p>Solutions tailored to grow your business.</p>
-    </div>
-
-    <div class="services__grid">
-      {% for service in site.data.services %}
-      <div class="service">
-        <img src="{{ '/assets/images/' | append: service.image | relative_url }}" alt="{{ service.title }}">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+    <div class="container">
+      <header class="section-header">
+        <h2>Our Services</h2>
+        <p>Solutions tailored to grow your business.</p>
+      </header>
+      <div class="services__grid">
+        {% for service in site.data.services %}
+        <article class="service">
+          <img src="{{ '/assets/images/' | append: service.image | relative_url }}" alt="{{ service.title }}" loading="lazy">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </article>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
