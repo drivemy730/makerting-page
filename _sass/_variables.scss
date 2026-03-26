@@ -1,4 +1,3 @@
-// _sass/_variables.scss
 
 // Brand Colors
 $primary:       #6366f1;
@@ -7,7 +6,7 @@ $dark:          #0f172a;
 $dark-soft:     #1e293b;
 $gray-light:    #f1f5f9;
 $white:         #ffffff;
-$dark-accent: #3f4b5f; // A slightly lighter, "softer" navy than $dark-soft
+$dark-accent: #3f4b5f; 
 
 
 // UI Elements
@@ -16,7 +15,7 @@ $text-muted:      rgba(226, 232, 240, 0.6);
 $glass-bg:        rgba(255, 255, 255, 0.03);
 $section-padding: 6rem 0;
 $transition:      all 0.35s ease;
-$glass-bg: rgba(255, 255, 255, 0.03); // Very subtle white transparency
+$glass-bg: rgba(255, 255, 255, 0.03); 
 
 // The Mixin
 @mixin responsive-grid($mobile: 1, $tablet: 2, $desktop: 3, $gap: 2rem) {

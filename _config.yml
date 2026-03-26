@@ -1,7 +1,7 @@
 # Site settings
 title: DevMark Agency
 description: Modern digital solutions for growing brands.
-url: "https://marketing-page.vercel.app" # Fix the typo here!
+url: "https://marketing-page.vercel.app" # Typo fixed!
 author: David Velez
 
 # This tells Jekyll where to look for your Sass
@@ -9,7 +9,9 @@ sass:
   sass_dir: _sass
   style: compressed
 
-
-  
 # Build settings
 permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap

@@ -1,9 +1,8 @@
 .services {
-  background: $dark-accent; // Your purple/navy blend
+  background: $dark-accent; 
   padding: $section-padding;
   text-align: center;
 
-  // Fix the "Black Header" issue
   h2 { color: $white; }
   p { color: $text-muted; }
 
@@ -12,25 +11,24 @@
   }
 
   .service {
-    // Replace solid white with a "Dark Glass" background
     background: rgba($white, 0.04); 
     backdrop-filter: blur(10px);
     border: 1px solid rgba($white, 0.1);
     border-radius: 20px;
     padding: 2rem;
     transition: $transition;
-    text-align: left; // Keeps card content readable
+    text-align: left;
 
     img {
       max-width: 100%;
       height: auto;
       margin-bottom: 1.5rem;
-      border-radius: 12px; // Softer corners for the images
+      border-radius: 12px; 
       display: block;
     }
 
     h3 {
-      color: $white; // No more black headers
+      color: $white; 
       margin-bottom: 0.75rem;
       font-size: 1.25rem;
     }

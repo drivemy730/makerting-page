@@ -7,13 +7,10 @@
     @include responsive-grid(1, 2, 3); 
   }
 
-  // Matches the 'feature' class in HTML
   .feature {
-    // Increased opacity from 0.03 to 0.06 for better visibility
     background: rgba($white, 0.06); 
     backdrop-filter: blur(12px);
     
-    // A brighter border makes the card "pop" against dark backgrounds
     border: 1px solid rgba($white, 0.15); 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     
@@ -36,7 +33,6 @@
 
     &:hover {
       transform: translateY(-10px);
-      // Lighten slightly on hover for an interactive feel
       background: rgba($white, 0.1); 
       border-color: rgba($primary, 0.5);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
