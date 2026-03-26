@@ -1,13 +1,11 @@
 <section id="services" class="services">
   <div class="container">
-
     <div class="section-header">
       <h2>Our Services</h2>
       <p>Solutions tailored to grow your business.</p>
     </div>
 
     <div class="services__grid">
-      
       {% for service in site.data.services %}
       <div class="service">
         <img src="{{ '/assets/images/' | append: service.image | relative_url }}" alt="{{ service.title }}">
@@ -15,8 +13,6 @@
         <p>{{ service.description }}</p>
       </div>
       {% endfor %}
-
     </div>
-
   </div>
 </section>

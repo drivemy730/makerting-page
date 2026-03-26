@@ -1,29 +1,51 @@
 .services {
-  background: $dark-accent;
+  background: $dark-accent; // Your purple/navy blend
   padding: $section-padding;
+  text-align: center;
+
+  // Fix the "Black Header" issue
+  h2 { color: $white; }
+  p { color: $text-muted; }
 
   &__grid {
     @include responsive-grid(1, 2, 3);
   }
 
   .service {
-    background: $white;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    
+    // Replace solid white with a "Dark Glass" background
+    background: rgba($white, 0.04); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($white, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: $transition;
+    text-align: left; // Keeps card content readable
+
     img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 1rem;
-      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      border-radius: 12px; // Softer corners for the images
+      display: block;
+    }
+
+    h3 {
+      color: $white; // No more black headers
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: $white;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     &:hover {
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      transform: translateY(-8px);
+      background: rgba($white, 0.07);
+      border-color: rgba($primary, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
   }
-}
-
-.services__grid {
-  @include responsive-grid(1, 2, 3);
 }

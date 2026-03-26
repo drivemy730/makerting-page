@@ -5,12 +5,16 @@
       <p>We deliver measurable results through proven strategies.</p>
     </div>
 
-    <div class="features__grid "> {% for feature in site.data.features %}
-      <div class="feature-card">
-        <div class="feature__icon">{{ feature.icon }}</div>
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.description }}</p>
-      </div>
+    <div class="features__grid "> 
+      
+      {% for feature in site.data.features %}
+
+          <div class="feature">
+            <div class="feature__icon">{{ feature.icon }}</div>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+          </div>
+
       {% endfor %}
     </div>
   </div>
