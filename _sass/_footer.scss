@@ -1,44 +1,56 @@
 .footer {
-  background-color: darken($dark, 5%); // Slightly darker than the header
+  background-color: darken($dark, 5%);
   color: $text-light;
-  padding: 3rem 0; 
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 4rem 0 2rem;
+  border-top: 1px solid rgba($white, 0.05);
 
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 2rem;
-  }
 
-  a {
-    color: $text-light;
-    text-decoration: none;
-    transition: $transition;
-    
-    &:hover {
-      color: $primary;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
     }
   }
 
   &__links ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 768px) { flex-direction: row; gap: 2rem; }
+    
+    a { 
+      text-decoration: none; 
+      color: $text-light; 
+      &:hover { color: $primary; }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba($white, 0.05);
+    color: $text-muted;
+    font-size: 0.85rem;
   }
 }
 
-.footer__bottom {
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  font-size: 0.85rem;
-  color: $text-muted;
+// BUTTONS
+.btn--primary {
+  background-color: $primary;
+  color: $white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: $transition;
+  &:hover { background-color: $primary-hover; }
 }
-
-@media (min-width: 768px) {
-  .footer__container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
